@@ -71,6 +71,7 @@ printCards(team, teamContainer);
 // assegno variabili ad elementi del dom
 let inputName = document.getElementById('name');
 let inputRole = document.getElementById('role');
+let inputImage = document.getElementById('image');
 let inputButton = document.getElementById('addMemberButton');
 
 // aggiungo event listener al button 
@@ -79,12 +80,13 @@ inputButton.addEventListener('click', function(){
   // prelevo i valori dai campi nome e ruolo
   let newName = inputName.value;
   let newRole = inputRole.value;
+  let newImage = inputImage.value;
 
   // assegno variabile ai valori prelevati
   let obj = {
     name: newName,
     role: newRole,
-    image: 'new-team-member-03.jpg',
+    image: newImage,
   }
 
   // pusho i valori dentro l'array
