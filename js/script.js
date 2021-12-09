@@ -80,6 +80,8 @@ inputButton.addEventListener('click', function(){
   // prelevo i valori dai campi nome e ruolo
   let newName = inputName.value;
   let newRole = inputRole.value;
+
+  // il campo foto deve essere scritto come una delle foto che abbiamo nella cartella img
   let newImage = inputImage.value;
 
   // assegno variabile ai valori prelevati
